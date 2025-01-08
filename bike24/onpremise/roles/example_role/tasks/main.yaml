@@ -1,4 +1,4 @@
 ---
 - name: Example task
-  debug:
-    msg: "This is a test"
+  ansible.builtin.debug:
+    msg: "This is a collection test"
