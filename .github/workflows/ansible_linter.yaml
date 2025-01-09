@@ -12,9 +12,10 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      - name: Lint playbook
-        uses: ansible/ansible-lint-action@main
+      - name: Run Ansible
+        uses: ansible/ansible-lint@v24.12.2
+            
